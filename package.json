@@ -1,0 +1,27 @@
+{
+  "name": "hexo-renderer-ejs",
+  "version": "0.0.1",
+  "description": "EJS renderer plugin for Hexo",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexojs/hexo-renderer-ejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hexojs/hexo-renderer-ejs/issues"
+  },
+  "keywords": [
+    "hexo",
+    "ejs",
+    "renderer"
+  ],
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
+  },
+  "dependencies": {
+    "ejs": "1.x",
+    "lodash": "2.x"
+  }
+}
