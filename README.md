@@ -8,4 +8,4 @@ Add support for [EJS].
 $ npm install hexo-renderer-ejs --save
 ```
 
-[Jade]: https://github.com/visionmedia/ejs
+[EJS]: https://github.com/visionmedia/ejs
