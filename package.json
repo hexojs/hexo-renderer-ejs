@@ -3,25 +3,32 @@
   "version": "0.1.0",
   "description": "EJS renderer plugin for Hexo",
   "main": "index",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hexojs/hexo-renderer-ejs.git"
+  "scripts": {
+    "eslint": "eslint .",
+    "jscs": "jscs .",
+    "test": "mocha test/index.js",
+    "test-cov": "istanbul cover --print both _mocha -- test/index.js"
   },
-  "bugs": {
-    "url": "https://github.com/hexojs/hexo-renderer-ejs/issues"
-  },
+  "repository": "hexojs/hexo-renderer-ejs",
   "keywords": [
     "hexo",
     "ejs",
     "renderer"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
-  "license": {
-    "type": "MIT",
-    "url": "https://raw.github.com/tommy351/hexo/master/LICENSE"
-  },
+  "license": "MIT",
   "dependencies": {
     "ejs": "^1.0.0",
-    "lodash": "^2.4.1"
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-hexo": "^1.0.2",
+    "hexo-fs": "^0.1.5",
+    "istanbul": "^0.4.1",
+    "jscs": "^2.7.0",
+    "jscs-preset-hexo": "^1.0.1",
+    "mocha": "^2.3.4"
   }
 }

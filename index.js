@@ -1,6 +1,7 @@
-var ejs = require('ejs'),
-  _ = require('lodash');
+/* global hexo */
 
-hexo.extend.renderer.register('ejs', 'html', function(data, locals){
-  return ejs.render(data.text, _.extend({filename: data.path}, locals));
-}, true);
+'use strict';
+
+var renderer = require('./lib/renderer');
+
+hexo.extend.renderer.register('ejs', 'html', renderer, true);

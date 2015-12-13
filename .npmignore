@@ -1,2 +1,8 @@
-.git*
-.DS_Store
+test/
+tmp/
+coverage/
+*.log
+.travis.yml
+gulpfile.js
+.idea/
+appveyor.yml
