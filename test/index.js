@@ -16,6 +16,15 @@ describe('EJS renderer', function() {
     result.should.eql('Hello world');
   });
 
+  it('comments', function() {
+    var body = [
+      'Comment <%# hidden %>'
+    ].join('\n');
+
+    var result = r({text: body});
+    result.should.eql('Comment ');
+  });
+
   it('include', function() {
     var body = [
       '<% include test %>'

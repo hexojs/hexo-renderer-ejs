@@ -18,7 +18,7 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^1.0.0",
+    "ejs": "^2.3.4",
     "object-assign": "^4.0.1"
   },
   "devDependencies": {
