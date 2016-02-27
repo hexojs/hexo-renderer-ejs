@@ -8,19 +8,14 @@ describe('EJS renderer', function() {
   var r = require('../lib/renderer');
 
   it('default', function() {
-    var body = [
-      'Hello <%= name %>'
-    ].join('\n');
-
+    var body = 'Hello <%= name %>';
     var result = r({text: body}, {name: 'world'});
+
     result.should.eql('Hello world');
   });
 
   it('include', function() {
-    var body = [
-      '<% include test %>'
-    ].join('\n');
-
+    var body = '<% include test %>';
     var path = pathFn.join(__dirname, 'include_test', 'index.ejs');
     var includePath = pathFn.join(path, '../test.ejs');
     var includeBody = 'include body';
@@ -35,5 +30,15 @@ describe('EJS renderer', function() {
     }).finally(function() {
       return fs.unlink(includePath);
     });
+  });
+
+  it('compile', function() {
+    var body = 'Hello <%= name %>';
+    var render = r.compile({text: body});
+    var result = render({
+      name: 'world'
+    });
+
+    result.should.eql('Hello world');
   });
 });
