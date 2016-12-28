@@ -4,6 +4,8 @@
 
 Add support for [EJS].
 
+**For EJS v2 support, please use hexo-renderer-ejs2.**
+
 ## Install
 
 ``` bash
