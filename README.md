@@ -4,7 +4,7 @@
 
 Add support for [EJS].
 
-**Now work with EJS v2.**
+**Now works with EJS v2!**
 
 ## Install
 
@@ -12,5 +12,4 @@ Add support for [EJS].
 $ npm install hexo-renderer-ejs --save
 ```
 
-[EJS]: https://github.com/visionmedia/ejs
-[hexo-renderer-ejs2]: https://github.com/NoahDragon/hexo-renderer-ejs2
+[EJS]: https://github.com/mde/ejs
