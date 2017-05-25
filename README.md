@@ -4,7 +4,7 @@
 
 Add support for [EJS].
 
-**Now work with EJS v2.**
+**Now works with EJS v2!**
 
 ## Install
 
