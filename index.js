@@ -2,6 +2,6 @@
 
 'use strict';
 
-var renderer = require('./lib/renderer');
+const renderer = require('./lib/renderer');
 
 hexo.extend.renderer.register('ejs', 'html', renderer, true);
