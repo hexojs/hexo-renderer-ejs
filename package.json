@@ -32,5 +32,8 @@
     "jscs": "^2.7.0",
     "jscs-preset-hexo": "^1.0.1",
     "mocha": "^2.3.4"
+  },
+  "engines": {
+    "node": ">=6.9.0"
   }
 }
