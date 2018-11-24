@@ -23,7 +23,7 @@
     "ejs": "^2.6.1"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
+    "chai": "^4.2.0",
     "eslint": "^5.8.0",
     "eslint-config-hexo": "^3.0.0",
     "hexo-fs": "^1.0.0",
