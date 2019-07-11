@@ -8,6 +8,13 @@
     "test": "mocha test/index.js",
     "test-cov": "istanbul cover --print both _mocha -- test/index.js"
   },
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "repository": "hexojs/hexo-renderer-ejs",
   "keywords": [
     "hexo",
