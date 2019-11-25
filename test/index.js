@@ -1,6 +1,6 @@
 'use strict';
 
-const should = require('chai').should(); // eslint-disable-line
+require('chai').should();
 const fs = require('hexo-fs');
 const pathFn = require('path');
 
@@ -24,7 +24,7 @@ describe('EJS renderer', () => {
   });
 
   it('include', () => {
-    const body = '<% include test %>';
+    const body = '<%- include(\'test\') %>';
     const path = pathFn.join(__dirname, 'include_test', 'index.ejs');
     const includePath = pathFn.join(path, '../test.ejs');
     const includeBody = 'include body';
@@ -32,7 +32,7 @@ describe('EJS renderer', () => {
     return fs.writeFile(includePath, includeBody).then(() => {
       const result = r({
         text: body,
-        path: path
+        path
       });
 
       result.should.eql(includeBody);
