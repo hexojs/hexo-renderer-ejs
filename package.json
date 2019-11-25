@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "ejs": "^2.6.1"
+    "ejs": "^3.0.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
