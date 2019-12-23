@@ -33,7 +33,7 @@ describe('EJS renderer', () => {
     const result = await render({ text: body, path });
     result.should.eql(includeBody);
 
-    await fs.unlink(includePath);
+    await fs.rmdir(pathFn.join(__dirname, 'include_test'));
   });
 
   it('compile', async () => {
