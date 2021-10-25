@@ -1,6 +1,6 @@
 {
   "name": "hexo-renderer-ejs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "EJS renderer plugin for Hexo",
   "main": "index",
   "scripts": {
